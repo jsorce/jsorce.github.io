@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>CEDAR &#8211; jsorce.com</title>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="jsorce.com &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="jsorce.com &raquo; Comments Feed" href="/comments/feed/">
+<link rel="preload" href="/wp-content/themes/salient/css/fonts/icomoon.woff?v=1.6" as="font" type="font/woff" crossorigin="anonymous">
+<style id="global-styles-inline-css" type="text/css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 1300px;--wp--style--global--wide-size: 1300px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="nectar-portfolio-css" href="/wp-content/plugins/salient-portfolio/css/portfolio.css?ver=1.8" type="text/css" media="all">
+<link rel="stylesheet" id="salient-social-css" href="/wp-content/plugins/salient-social/css/style.css?ver=1.2.5" type="text/css" media="all">
+<style id="salient-social-inline-css" type="text/css">.sharing-default-minimal .nectar-love.loved,
+  body .nectar-social[data-color-override="override"].fixed > a:before, 
+  body .nectar-social[data-color-override="override"].fixed .nectar-social-inner a,
+  .sharing-default-minimal .nectar-social[data-color-override="override"] .nectar-social-inner a:hover,
+  .nectar-social.vertical[data-color-override="override"] .nectar-social-inner a:hover {
+    background-color: #111111;
+  }
+  .nectar-social.hover .nectar-love.loved,
+  .nectar-social.hover > .nectar-love-button a:hover,
+  .nectar-social[data-color-override="override"].hover > div a:hover,
+  #single-below-header .nectar-social[data-color-override="override"].hover > div a:hover,
+  .nectar-social[data-color-override="override"].hover .share-btn:hover,
+  .sharing-default-minimal .nectar-social[data-color-override="override"] .nectar-social-inner a {
+    border-color: #111111;
+  }
+  #single-below-header .nectar-social.hover .nectar-love.loved i,
+  #single-below-header .nectar-social.hover[data-color-override="override"] a:hover,
+  #single-below-header .nectar-social.hover[data-color-override="override"] a:hover i,
+  #single-below-header .nectar-social.hover .nectar-love-button a:hover i,
+  .nectar-love:hover i,
+  .hover .nectar-love:hover .total_loves,
+  .nectar-love.loved i,
+  .nectar-social.hover .nectar-love.loved .total_loves,
+  .nectar-social.hover .share-btn:hover, 
+  .nectar-social[data-color-override="override"].hover .nectar-social-inner a:hover,
+  .nectar-social[data-color-override="override"].hover > div:hover span,
+  .sharing-default-minimal .nectar-social[data-color-override="override"] .nectar-social-inner a:not(:hover) i,
+  .sharing-default-minimal .nectar-social[data-color-override="override"] .nectar-social-inner a:not(:hover) {
+    color: #111111;
+  }</style>
+<link rel="stylesheet" id="salient-grid-system-css" href="/wp-content/themes/salient/css/build/grid-system.css?ver=17.0.7" type="text/css" media="all">
+<link rel="stylesheet" id="main-styles-css" href="/wp-content/themes/salient/css/build/style.css?ver=17.0.7" type="text/css" media="all">
+<style id="main-styles-inline-css" type="text/css">body[data-ajax-transitions="true"] #ajax-loading-screen[data-effect="standard"],body[data-ajax-transitions="true"] #ajax-loading-screen[data-effect="standard"] .loading-icon{transition:opacity 0.4s ease;}body[data-ajax-transitions="true"] #ajax-loading-screen[data-effect="standard"].loaded,body[data-ajax-transitions="true"] #ajax-loading-screen[data-effect="standard"].loaded .loading-icon{opacity:0;}@media only screen and (max-width:999px){#ajax-content-wrap .top-level .nectar-post-grid[data-animation*="fade"] .nectar-post-grid-item,#ajax-content-wrap .top-level .nectar-post-grid[data-animation="zoom-out-reveal"] .nectar-post-grid-item *:not(.content):not(.bg-overlay),#ajax-content-wrap .top-level .nectar-post-grid[data-animation="zoom-out-reveal"] .nectar-post-grid-item *:before{transform:none;opacity:1;clip-path:none;}#ajax-content-wrap .top-level .nectar-post-grid[data-animation="zoom-out-reveal"] .nectar-post-grid-item .nectar-el-parallax-scroll .nectar-post-grid-item-bg-wrap-inner{transform:scale(1.275);}}.wpb_row.vc_row.top-level .nectar-video-bg{opacity:1;height:100%;width:100%;object-fit:cover;object-position:center center;}body.using-mobile-browser .wpb_row.vc_row.top-level .nectar-video-wrap{left:0;}body.using-mobile-browser .wpb_row.vc_row.top-level.full-width-section .nectar-video-wrap:not(.column-video){left:50%;}body.using-mobile-browser #nectar_fullscreen_rows[data-mobile-disable="off"] .wpb_row.vc_row.top-level.full-width-section .nectar-video-wrap:not(.column-video){left:0;}.wpb_row.vc_row.top-level .nectar-video-wrap{opacity:1;width:100%;}body .wpb_row.parallax_section.top-level > .nectar-video-wrap video:not(.translate){opacity:1;}.top-level .portfolio-items[data-loading=lazy-load] .col .inner-wrap.animated .top-level-image{opacity:1;}.wpb_row.vc_row.top-level .column-image-bg-wrap[data-n-parallax-bg="true"] .column-image-bg,.wpb_row.vc_row.top-level + .wpb_row .column-image-bg-wrap[data-n-parallax-bg="true"] .column-image-bg,#portfolio-extra > .wpb_row.vc_row.parallax_section:first-child .row-bg{transform:none!important;height:100%!important;opacity:1;}#portfolio-extra > .wpb_row.vc_row.parallax_section .row-bg{background-attachment:scroll;}.scroll-down-wrap.hidden{transform:none;opacity:1;}#ajax-loading-screen[data-disable-mobile="0"]{display:none!important;}body[data-slide-out-widget-area-style="slide-out-from-right"].material .slide_out_area_close.hide_until_rendered{opacity:0;}.portfolio-items[data-col-num="elastic"]:not(.fullwidth-constrained){margin-left:-50vw;margin-left:calc(-50vw + var(--scroll-bar-w)/2)!important;left:50%!important;width:100vw;width:calc(100vw - var(--scroll-bar-w))!important;}@media only screen and (max-width:999px){.portfolio-items .col .inner-wrap[data-animation="fade_in"],.portfolio-items:not(.carousel) .col .inner-wrap.animated{transform:none;opacity:1;}}@media only screen and (min-width:470px) and (max-width:690px){body .portfolio-items .col.elastic-portfolio-item.tall,body .portfolio-items .col.elastic-portfolio-item.regular,body .portfolio-items .col.elastic-portfolio-item:not([class*="wide"]){width:50%;}}@media only screen and (min-width:691px){body .portfolio-items{display:flex;flex-wrap:wrap;}body .portfolio-items .col.elastic-portfolio-item.tall,body .portfolio-items .col.elastic-portfolio-item.regular,body .portfolio-items .col.elastic-portfolio-item:not([class*="wide"]){width:50%;}}@media only screen and (min-width:1000px){body .portfolio-items .col.elastic-portfolio-item.tall,body .portfolio-items .col.elastic-portfolio-item.regular{width:33.3%;}}</style>
+<link rel="stylesheet" id="nectar-header-layout-centered-menu-css" href="/wp-content/themes/salient/css/build/header/header-layout-centered-menu.css?ver=17.0.7" type="text/css" media="all">
+<link rel="stylesheet" id="nectar-header-perma-transparent-css" href="/wp-content/themes/salient/css/build/header/header-perma-transparent.css?ver=17.0.7" type="text/css" media="all">
+<link rel="stylesheet" id="nectar-single-styles-css" href="/wp-content/themes/salient/css/build/single.css?ver=17.0.7" type="text/css" media="all">
+<link rel="stylesheet" id="nectar-element-post-grid-css" href="/wp-content/themes/salient/css/build/elements/element-post-grid.css?ver=17.0.7" type="text/css" media="all">
+<link rel="stylesheet" id="nectar-element-recent-posts-css" href="/wp-content/themes/salient/css/build/elements/element-recent-posts.css?ver=17.0.7" type="text/css" media="all">
+<link rel="stylesheet" id="nectar_default_font_open_sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&#038;subset=latin%2Clatin-ext&#038;display=swap" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-css" href="/wp-content/themes/salient/css/build/responsive.css?ver=17.0.7" type="text/css" media="all">
+<link rel="stylesheet" id="skin-material-css" href="/wp-content/themes/salient/css/build/skin-material.css?ver=17.0.7" type="text/css" media="all">
+<link rel="stylesheet" id="salient-wp-menu-dynamic-css" href="/wp-content/uploads/salient/menu-dynamic.css?ver=54822" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css-css" href="/wp-content/themes/salient/css/salient-dynamic-styles.css?ver=83209" type="text/css" media="all">
+<style id="dynamic-css-inline-css" type="text/css">.single.single-post .container-wrap{padding-top:0;}.main-content .featured-media-under-header{padding:min(6vw,90px) 0;}.featured-media-under-header__featured-media:not([data-has-img="false"]){margin-top:min(6vw,90px);}.featured-media-under-header__featured-media:not([data-format="video"]):not([data-format="audio"]):not([data-has-img="false"]){overflow:hidden;position:relative;padding-bottom:50%;}.featured-media-under-header__meta-wrap{display:flex;flex-wrap:wrap;align-items:center;}.featured-media-under-header__meta-wrap .meta-author{display:inline-flex;align-items:center;}.featured-media-under-header__meta-wrap .meta-author img{margin-right:8px;width:28px;border-radius:100px;}.featured-media-under-header__featured-media .post-featured-img{display:block;line-height:0;top:auto;bottom:0;}.featured-media-under-header__featured-media[data-n-parallax-bg="true"] .post-featured-img{height:calc(100% + 75px);}.featured-media-under-header__featured-media .post-featured-img img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:top;}@media only screen and (max-width:690px){.featured-media-under-header__featured-media[data-n-parallax-bg="true"] .post-featured-img{height:calc(100% + 45px);}.featured-media-under-header__meta-wrap{font-size:14px;}}.featured-media-under-header__featured-media[data-align="center"] .post-featured-img img{object-position:center;}.featured-media-under-header__featured-media[data-align="bottom"] .post-featured-img img{object-position:bottom;}.featured-media-under-header h1{margin:max(min(0.35em,35px),20px) 0 max(min(0.25em,25px),15px) 0;}.featured-media-under-header__cat-wrap .meta-category a{line-height:1;padding:7px 15px;margin-right:15px;}.featured-media-under-header__cat-wrap .meta-category a:not(:hover){background-color:rgba(0,0,0,0.05);}.featured-media-under-header__cat-wrap .meta-category a:hover{color:#fff;}.featured-media-under-header__meta-wrap a,.featured-media-under-header__cat-wrap a{color:inherit;}.featured-media-under-header__meta-wrap > span:not(:first-child):not(.rich-snippet-hidden):before{content:"·";padding:0 .5em;}.featured-media-under-header__excerpt{margin:0 0 20px 0;}@media only screen and (min-width:691px){[data-animate="fade_in"] .featured-media-under-header__cat-wrap,[data-animate="fade_in"].featured-media-under-header .entry-title,[data-animate="fade_in"] .featured-media-under-header__meta-wrap,[data-animate="fade_in"] .featured-media-under-header__featured-media,[data-animate="fade_in"] .featured-media-under-header__excerpt,[data-animate="fade_in"].featured-media-under-header + .row .content-inner{opacity:0;transform:translateY(50px);animation:nectar_featured_media_load 1s cubic-bezier(0.25,1,0.5,1) forwards;}[data-animate="fade_in"] .featured-media-under-header__cat-wrap{animation-delay:0.1s;}[data-animate="fade_in"].featured-media-under-header .entry-title{animation-delay:0.2s;}[data-animate="fade_in"] .featured-media-under-header__excerpt{animation-delay:0.3s;}[data-animate="fade_in"] .featured-media-under-header__meta-wrap{animation-delay:0.3s;}[data-animate="fade_in"] .featured-media-under-header__featured-media{animation-delay:0.4s;}[data-animate="fade_in"].featured-media-under-header + .row .content-inner{animation-delay:0.5s;}}@keyframes nectar_featured_media_load{0%{transform:translateY(50px);opacity:0;}100%{transform:translateY(0px);opacity:1;}}.featured-media-under-header__content{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:1000px;margin:0 auto;}@media only screen and (min-width:691px){.featured-media-under-header__excerpt{max-width:75%;}}.featured-media-under-header__meta-wrap .meta-author img{margin-right:15px;width:50px;}@media only screen and (max-width:690px){width:40px;}.featured-media-under-header__meta-wrap .meta-author > span{text-align:left;line-height:1.5;}.featured-media-under-header__meta-wrap .meta-author > span span:not(.rich-snippet-hidden){display:block;}.featured-media-under-header__meta-wrap .meta-date,.featured-media-under-header__meta-wrap .meta-reading-time{font-size:.85em;}.no-rgba #header-space{display:none;}@media only screen and (max-width:999px){body #header-space[data-header-mobile-fixed="1"]{display:none;}#header-outer[data-mobile-fixed="false"]{position:absolute;}}@media only screen and (max-width:999px){body:not(.nectar-no-flex-height) #header-space[data-secondary-header-display="full"]:not([data-header-mobile-fixed="false"]){display:block!important;margin-bottom:-50px;}#header-space[data-secondary-header-display="full"][data-header-mobile-fixed="false"]{display:none;}}@media only screen and (min-width:1000px){#header-space{display:none;}.nectar-slider-wrap.first-section,.parallax_slider_outer.first-section,.full-width-content.first-section,.parallax_slider_outer.first-section .swiper-slide .content,.nectar-slider-wrap.first-section .swiper-slide .content,#page-header-bg,.nder-page-header,#page-header-wrap,.full-width-section.first-section{margin-top:0!important;}body #page-header-bg,body #page-header-wrap{height:80px;}body #search-outer{z-index:100000;}}@media only screen and (min-width:1000px){#page-header-wrap.fullscreen-header,#page-header-wrap.fullscreen-header #page-header-bg,html:not(.nectar-box-roll-loaded) .nectar-box-roll > #page-header-bg.fullscreen-header,.nectar_fullscreen_zoom_recent_projects,#nectar_fullscreen_rows:not(.afterLoaded) > div{height:100vh;}.wpb_row.vc_row-o-full-height.top-level,.wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:100vh;}#page-header-bg[data-alignment-v="middle"] .span_6 .inner-wrap,#page-header-bg[data-alignment-v="top"] .span_6 .inner-wrap,.blog-archive-header.color-bg .container{padding-top:75px;}#page-header-wrap.container #page-header-bg .span_6 .inner-wrap{padding-top:0;}.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container{height:calc(100vh + 2px)!important;}.admin-bar .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),.admin-bar .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container{height:calc(100vh - 30px)!important;}}@media only screen and (max-width:999px){#page-header-bg[data-alignment-v="middle"]:not(.fullscreen-header) .span_6 .inner-wrap,#page-header-bg[data-alignment-v="top"] .span_6 .inner-wrap,.blog-archive-header.color-bg .container{padding-top:34px;}.vc_row.top-level.full-width-section:not(.full-width-ns) > .span_12,#page-header-bg[data-alignment-v="bottom"] .span_6 .inner-wrap{padding-top:24px;}}@media only screen and (max-width:690px){.vc_row.top-level.full-width-section:not(.full-width-ns) > .span_12{padding-top:34px;}.vc_row.top-level.full-width-content .nectar-recent-posts-single_featured .recent-post-container > .inner-wrap{padding-top:24px;}}@media only screen and (max-width:999px){.full-width-ns .nectar-slider-wrap .swiper-slide[data-y-pos="middle"] .content,.full-width-ns .nectar-slider-wrap .swiper-slide[data-y-pos="top"] .content{padding-top:30px;}}@media only screen and (max-width:999px){.using-mobile-browser #nectar_fullscreen_rows:not(.afterLoaded):not([data-mobile-disable="on"]) > div{height:calc(100vh - 76px);}.using-mobile-browser .wpb_row.vc_row-o-full-height.top-level,.using-mobile-browser .wpb_row.vc_row-o-full-height.top-level > .col.span_12,[data-permanent-transparent="1"].using-mobile-browser .wpb_row.vc_row-o-full-height.top-level,[data-permanent-transparent="1"].using-mobile-browser .wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:calc(100vh - 76px);}html:not(.nectar-box-roll-loaded) .nectar-box-roll > #page-header-bg.fullscreen-header,.nectar_fullscreen_zoom_recent_projects,.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),.nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container,#nectar_fullscreen_rows:not(.afterLoaded):not([data-mobile-disable="on"]) > div{height:calc(100vh - 1px);}.wpb_row.vc_row-o-full-height.top-level,.wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:calc(100vh - 1px);}[data-bg-header="true"][data-permanent-transparent="1"] #page-header-wrap.fullscreen-header,[data-bg-header="true"][data-permanent-transparent="1"] #page-header-wrap.fullscreen-header #page-header-bg,html:not(.nectar-box-roll-loaded) [data-bg-header="true"][data-permanent-transparent="1"] .nectar-box-roll > #page-header-bg.fullscreen-header,[data-bg-header="true"][data-permanent-transparent="1"] .nectar_fullscreen_zoom_recent_projects,[data-permanent-transparent="1"] .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),[data-permanent-transparent="1"] .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container{height:100vh;}[data-permanent-transparent="1"] .wpb_row.vc_row-o-full-height.top-level,[data-permanent-transparent="1"] .wpb_row.vc_row-o-full-height.top-level > .col.span_12{min-height:100vh;}body[data-transparent-header="false"] #ajax-content-wrap.no-scroll{min-height:calc(100vh - 1px);height:calc(100vh - 1px);}}#ajax-content-wrap .vc_row.inner_row.right_padding_20pct .row_col_wrap_12_inner,.nectar-global-section .vc_row.inner_row.right_padding_20pct .row_col_wrap_12_inner{padding-right:20%;}body .container-wrap .wpb_row[data-column-margin="10px"]:not(.full-width-section):not(.full-width-content){margin-bottom:10px;}body .container-wrap .vc_row-fluid[data-column-margin="10px"] > .span_12,html body .vc_row-fluid[data-column-margin="10px"] > .span_12,body .container-wrap .vc_row-fluid[data-column-margin="10px"] .full-page-inner > .container > .span_12,body .container-wrap .vc_row-fluid[data-column-margin="10px"] .full-page-inner > .span_12{margin-left:-5px;margin-right:-5px;}body .container-wrap .vc_row-fluid[data-column-margin="10px"] .wpb_column:not(.child_column),body .container-wrap .inner_row[data-column-margin="10px"] .child_column,html body .vc_row-fluid[data-column-margin="10px"] .wpb_column:not(.child_column),html body .inner_row[data-column-margin="10px"] .child_column{padding-left:5px;padding-right:5px;}.container-wrap .vc_row-fluid[data-column-margin="10px"].full-width-content > .span_12,html body .vc_row-fluid[data-column-margin="10px"].full-width-content > .span_12,.container-wrap .vc_row-fluid[data-column-margin="10px"].full-width-content .full-page-inner > .span_12{margin-left:0;margin-right:0;padding-left:5px;padding-right:5px;}.single-portfolio #full_width_portfolio .vc_row-fluid[data-column-margin="10px"].full-width-content > .span_12{padding-right:5px;}@media only screen and (max-width:999px) and (min-width:691px){.vc_row-fluid[data-column-margin="10px"] > .span_12 > .one-fourths:not([class*="vc_col-xs-"]),.vc_row-fluid .vc_row-fluid.inner_row[data-column-margin="10px"] > .span_12 > .one-fourths:not([class*="vc_col-xs-"]){margin-bottom:10px;}}@media only screen and (max-width:999px){.vc_row-fluid[data-column-margin="10px"] .wpb_column:not([class*="vc_col-xs-"]):not(.child_column):not(:last-child),.inner_row[data-column-margin="10px"] .child_column:not([class*="vc_col-xs-"]):not(:last-child){margin-bottom:10px;}}.wpb_column.el_spacing_0px > .vc_column-inner > .wpb_wrapper > div:not(:last-child),.wpb_column.el_spacing_0px > .n-sticky > .vc_column-inner > .wpb_wrapper > div:not(:last-child){margin-bottom:0;}.wpb_column.el_spacing_10px > .vc_column-inner > .wpb_wrapper > div:not(:last-child),.wpb_column.el_spacing_10px > .n-sticky > .vc_column-inner > .wpb_wrapper > div:not(:last-child){margin-bottom:10px;}.wpb_column.child_column.el_spacing_0px > .vc_column-inner > .wpb_wrapper > div:not(:last-child),.wpb_column.child_column.el_spacing_0px > .n-sticky > .vc_column-inner > .wpb_wrapper > div:not(:last-child){margin-bottom:0;}@media only screen,print{.wpb_column.right_padding_desktop_15pct > .vc_column-inner{padding-right:15%;}}@media only screen and (max-width:999px){body .wpb_column.right_padding_tablet_0px > .vc_column-inner{padding-right:0;}}@media only screen,print{.wpb_column.right_padding_desktop_15pct > .n-sticky > .vc_column-inner{padding-right:15%;}}@media only screen and (max-width:999px){body .wpb_column.right_padding_tablet_0px > .n-sticky > .vc_column-inner{padding-right:0;}}.wpb_column.child_column.el_spacing_30px > .vc_column-inner > .wpb_wrapper > div:not(:last-child),.wpb_column.child_column.el_spacing_30px > .n-sticky > .vc_column-inner > .wpb_wrapper > div:not(:last-child){margin-bottom:30px;}.wpb_column.child_column.el_spacing_20px > .vc_column-inner > .wpb_wrapper > div:not(:last-child),.wpb_column.child_column.el_spacing_20px > .n-sticky > .vc_column-inner > .wpb_wrapper > div:not(:last-child){margin-bottom:20px;}.img-with-aniamtion-wrap[data-border-radius="5px"] .img-with-animation,.img-with-aniamtion-wrap[data-border-radius="5px"] .inner,.img-with-aniamtion-wrap[data-border-radius="5px"] .hover-wrap{border-radius:5px;}.nectar-split-heading .heading-line{display:block;overflow:hidden;position:relative}.nectar-split-heading .heading-line >div{display:block;transform:translateY(200%);-webkit-transform:translateY(200%)}.nectar-split-heading h1{margin-bottom:0}@media only screen and (min-width:1000px){.nectar-split-heading[data-custom-font-size="true"] h1,.nectar-split-heading[data-custom-font-size="true"] h2,.row .nectar-split-heading[data-custom-font-size="true"] h3,.row .nectar-split-heading[data-custom-font-size="true"] h4,.row .nectar-split-heading[data-custom-font-size="true"] h5,.row .nectar-split-heading[data-custom-font-size="true"] h6,.row .nectar-split-heading[data-custom-font-size="true"] i{font-size:inherit;line-height:inherit;}}.nectar-split-heading.font_line_height_1-2{line-height:1.2!important;}.nectar-split-heading.font_line_height_1-2 *{line-height:1.2!important;}@media only screen,print{body #ajax-content-wrap .font_size_6vw.font_size_max_104px.nectar-split-heading,body .font_size_6vw.font_size_max_104px.nectar-split-heading{font-size:min(104px,6vw)!important;}}@media only screen,print{body #ajax-content-wrap .font_size_6vw.font_size_max_104px.nectar-split-heading,body .font_size_6vw.font_size_max_104px.nectar-split-heading,body #header-outer .font_size_6vw.font_size_max_104px.nectar-split-heading{font-size:min(104px,6vw)!important;}}#ajax-content-wrap .font_line_height_1-2.nectar-split-heading,body .font_line_height_1-2.nectar-split-heading{line-height:1.2;}.centered-text .nectar-split-heading[data-animation-type="line-reveal-by-space"] h1,.centered-text .nectar-split-heading[data-animation-type="line-reveal-by-space"] h2,.centered-text .nectar-split-heading[data-animation-type="line-reveal-by-space"] h3,.centered-text .nectar-split-heading[data-animation-type="line-reveal-by-space"] h4{margin:0 auto;}.nectar-split-heading[data-animation-type="line-reveal-by-space"]:not(.markup-generated){opacity:0;}.nectar-split-heading[data-animation-type="line-reveal-by-space"]:not(.markup-generated).animated-in{opacity:1;}@media only screen and (max-width:999px){.nectar-split-heading[data-m-rm-animation="true"]{opacity:1!important;}}.nectar-split-heading[data-animation-type="line-reveal-by-space"] > * > span{position:relative;display:inline-block;overflow:hidden;}.nectar-split-heading[data-animation-type="line-reveal-by-space"] span{vertical-align:bottom;}.nectar-split-heading[data-animation-type="line-reveal-by-space"] span{line-height:1.2;}@media only screen and (min-width:1000px){.nectar-split-heading[data-animation-type="line-reveal-by-space"]:not(.markup-generated) > *{line-height:1.2;}}@media only screen and (max-width:999px){.nectar-split-heading[data-animation-type="line-reveal-by-space"]:not([data-m-rm-animation="true"]):not(.markup-generated) > *{line-height:1.2;}}.nectar-split-heading[data-animation-type="line-reveal-by-space"][data-stagger="true"]:not([data-text-effect*="letter-reveal"]) span .inner{transition:transform 1.2s cubic-bezier(0.25,1,0.5,1),opacity 1.2s cubic-bezier(0.25,1,0.5,1);}.nectar-split-heading[data-animation-type="line-reveal-by-space"] span .inner{position:relative;display:inline-block;-webkit-transform:translateY(1.3em);transform:translateY(1.3em);}.nectar-split-heading[data-animation-type="line-reveal-by-space"] span .inner.animated{-webkit-transform:none;transform:none;opacity:1;}.nectar-split-heading[data-animation-type="line-reveal-by-space"][data-align="left"]{display:flex;justify-content:flex-start;}.nectar-split-heading[data-animation-type="line-reveal-by-space"][data-align="center"]{display:flex;justify-content:center;}.nectar-split-heading[data-animation-type="line-reveal-by-space"][data-align="right"]{display:flex;justify-content:flex-end;}@media only screen and (max-width:999px){.nectar-split-heading[data-animation-type="line-reveal-by-space"][data-m-align="left"]{display:flex;justify-content:flex-start;}.nectar-split-heading[data-animation-type="line-reveal-by-space"][data-m-align="center"]{display:flex;justify-content:center;}.nectar-split-heading[data-animation-type="line-reveal-by-space"][data-m-align="right"]{display:flex;justify-content:flex-end;}}.nectar-meta-category-el{display:flex;flex-wrap:wrap;gap:10px;}.nectar-meta-category-el a{color:inherit;position:relative;}@media only screen,print{.nectar-meta-category-el.alignment_right_desktop{justify-content:flex-end;}}.nectar-meta-category-el.style-outline > *{position:relative;display:inline-block;line-height:1;padding:.4em .8em;}.nectar-meta-category-el.style-outline > *:before{content:"";position:absolute;left:0;top:0;width:100%;height:100%;border:1px solid currentColor;border-radius:var(--nectar-border-radius);opacity:0.5;transition:opacity 0.2s ease;}.nectar-meta-category-el.style-outline > a:hover:before{opacity:1;}#ajax-content-wrap .nectar-responsive-text *,body .nectar-responsive-text *{margin-bottom:0;color:inherit;}#ajax-content-wrap .nectar-responsive-text[class*="font_size"] *,body .nectar-responsive-text[class*="font_size"] *{font-size:inherit;line-height:inherit;}.nectar-responsive-text.nectar-link-underline-effect a{text-decoration:none;}.nectar-responsive-text[data-inherit-heading-family] > *{font-family:inherit;font-weight:inherit;font-size:inherit;line-height:inherit;text-transform:inherit;letter-spacing:inherit;}@media only screen,print{#ajax-content-wrap .font_size_desktop_1-5em.nectar-responsive-text,.font_size_desktop_1-5em.nectar-responsive-text{font-size:1.5em;}}@media only screen,print{#ajax-content-wrap .font_size_desktop_1-5em.nectar-responsive-text,.font_size_desktop_1-5em.nectar-responsive-text,#header-outer .font_size_desktop_1-5em.nectar-responsive-text{font-size:1.5em;}}@media only screen and (max-width:999px){#ajax-content-wrap .font_size_tablet_1em.nectar-responsive-text,.font_size_tablet_1em.nectar-responsive-text{font-size:1em;}}@media only screen and (max-width:999px){#ajax-content-wrap .container-wrap .font_size_tablet_1em.nectar-responsive-text,.container-wrap .font_size_tablet_1em.nectar-responsive-text,#header-outer .font_size_tablet_1em.nectar-responsive-text{font-size:1em;}}#ajax-content-wrap .font_line_height_1-6.nectar-responsive-text,body .font_line_height_1-6.nectar-responsive-text{line-height:1.6;}@media only screen and (max-width:999px){.nectar-meta-category-el.alignment_default_tablet{justify-content:flex-start;}}@media only screen and (max-width:999px){#ajax-content-wrap .vc_row.inner_row.right_padding_tablet_0px .row_col_wrap_12_inner{padding-right:0!important;}}@media only screen and (max-width:999px){.wpb_column.child_column.top_margin_tablet_30px{margin-top:30px!important;}}@media only screen and (max-width:690px){.nectar-meta-category-el.alignment_default_phone{justify-content:flex-start;}}.screen-reader-text,.nectar-skip-to-content:not(:focus){border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;}.row .col img:not([srcset]){width:auto;}.row .col img.img-with-animation.nectar-lazy:not([srcset]){width:100%;}</style>
+<link rel="stylesheet" id="redux-google-fonts-salient_redux-css" href="http://fonts.googleapis.com/css?family=Gloock%3A400%7CDM+Sans%3A400%2C600%7CSource+Serif+Pro%3A400&#038;display=swap&#038;ver=6.7.2" type="text/css" media="all">
+<script></script><link rel="https://api.w.org/" href="/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.7.2">
+<link rel="canonical" href="/portfolio/cedar/">
+<link rel="shortlink" href="/?p=33">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fportfolio%2Fcedar%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fportfolio%2Fcedar%2F#038;format=xml">
+<script type="text/javascript">var root = document.getElementsByTagName( "html" )[0]; root.setAttribute( "class", "js" );</script><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<noscript><style>.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+</head>
+<body class="portfolio-template-default single single-portfolio postid-33 material remove-default-project-header wpb-js-composer js-comp-ver-7.8.1 vc_responsive" data-footer-reveal="false" data-footer-reveal-shadow="none" data-header-format="centered-menu" data-body-border="off" data-boxed-style="" data-header-breakpoint="1000" data-dropdown-style="minimal" data-cae="easeOutCubic" data-cad="1300" data-megamenu-width="contained" data-aie="none" data-ls="fancybox" data-apte="standard" data-hhun="1" data-fancy-form-rcs="default" data-form-style="default" data-form-submit="regular" data-is="minimal" data-button-style="rounded_shadow" data-user-account-button="false" data-flex-cols="true" data-col-gap="default" data-header-inherit-rc="false" data-header-search="false" data-animated-anchors="true" data-ajax-transitions="false" data-full-width-header="false" data-slide-out-widget-area="true" data-slide-out-widget-area-style="slide-out-from-right-hover" data-user-set-ocm="off" data-loading-animation="none" data-bg-header="true" data-responsive="1" data-ext-responsive="true" data-ext-padding="40" data-header-resize="0" data-header-color="custom" data-cart="false" data-remove-m-parallax="" data-remove-m-video-bgs="" data-m-animate="1" data-force-header-trans-color="light" data-smooth-scrolling="0" data-permanent-transparent="1">
+	
+	<script type="text/javascript">(function(window, document) {
+
+		document.documentElement.classList.remove("no-js");
+
+		if(navigator.userAgent.match(/(Android|iPod|iPhone|iPad|BlackBerry|IEMobile|Opera Mini)/)) {
+			document.body.className += " using-mobile-browser mobile ";
+		}
+		if(navigator.userAgent.match(/Mac/) && navigator.maxTouchPoints && navigator.maxTouchPoints > 2) {
+			document.body.className += " using-ios-device ";
+		}
+
+		if( !("ontouchstart" in window) ) {
+
+			var body = document.querySelector("body");
+			var winW = window.innerWidth;
+			var bodyW = body.clientWidth;
+
+			if (winW > bodyW + 4) {
+				body.setAttribute("style", "--scroll-bar-w: " + (winW - bodyW - 4) + "px");
+			} else {
+				body.setAttribute("style", "--scroll-bar-w: 0px");
+			}
+		}
+
+	 })(window, document);</script><a href="#ajax-content-wrap" class="nectar-skip-to-content">Skip to main content</a><div class="ocm-effect-wrap"><div class="ocm-effect-wrap-inner">	<div id="header-outer" data-has-menu="true" data-has-buttons="no" data-header-button_style="hover_scale" data-using-pr-menu="true" data-mobile-fixed="1" data-ptnm="false" data-lhe="text_reveal" data-user-set-bg="#000000" data-format="centered-menu" data-permanent-transparent="1" data-megamenu-rt="0" data-remove-fixed="0" data-header-resize="0" data-cart="false" data-transparency-option="1" data-box-shadow="large" data-shrink-num="6" data-using-secondary="0" data-using-logo="0" data-logo-height="20" data-m-logo-height="24" data-padding="30" data-full-width="false" data-condense="false" data-transparent-header="true" data-transparent-shadow-helper="true" data-remove-border="true" class="transparent">
+		
+<div id="search-outer" class="nectar">
+	<div id="search">
+		<div class="container">
+			 <div id="search-box">
+				 <div class="inner-wrap">
+					 <div class="col span_12">
+						  <form role="search" action="/" method="GET">
+														 <input type="text" name="s" id="s" value="" aria-label="Search" placeholder="Type what you&#039;re looking for">
+							 
+						<span>Hit enter to search or ESC to close</span>
+						<input type="hidden" name="post_type" value="post">						</form>
+					</div>
+<!--/span_12-->
+				</div>
+<!--/inner-wrap-->
+			 </div>
+<!--/search-box-->
+			 <div id="close"><a href="#"><span class="screen-reader-text">Close Search</span>
+				<span class="close-wrap"> <span class="close-line close-line1"></span> <span class="close-line close-line2"></span> </span>				 </a></div>
+		 </div>
+<!--/container-->
+	</div>
+<!--/search-->
+</div>
+<!--/search-outer-->
+
+<header id="top">
+	<div class="container">
+		<div class="row">
+			<div class="col span_3">
+				<ul class="left-aligned-ocm" data-user-set="off"><li class="slide-out-widget-area-toggle" data-icon-animation="simple-transform" data-custom-color="false"><div> <a href="#slide-out-widget-area" aria-label="Navigation Menu" aria-expanded="false" role="button" class="closed"> <span class="screen-reader-text">Menu</span><span aria-hidden="true"> <i class="lines-button x2" data-variant="even_lines"> <i class="lines"></i> </i> </span> </a> </div></li></ul>				<a id="logo" href="/" data-supplied-ml-starting-dark="false" data-supplied-ml-starting="false" data-supplied-ml="false" class="no-image">
+					jsorce.com				</a>
+							</div>
+<!--/span_3-->
+
+			<div class="col span_9 col_last">
+									<div class="nectar-mobile-only mobile-header"><div class="inner"><ul id="menu-portfolio-layered-cta" class="sf-menu">
+<li id="menu-item-361" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-btn-style-button_extra-color-1 menu-item-361"><a href="#contact"><span class="menu-title-text">Contact Me</span></a></li>
+</ul></div></div>
+													<div class="slide-out-widget-area-toggle mobile-icon slide-out-from-right-hover" data-custom-color="false" data-icon-animation="simple-transform">
+						<div> <a href="#slide-out-widget-area" role="button" aria-label="Navigation Menu" aria-expanded="false" class="closed">
+							<span class="screen-reader-text">Menu</span><span aria-hidden="true"> <i class="lines-button x2" data-variant="even_lines"> <i class="lines"></i> </i> </span>						</a>
+</div>
+					</div>
+				
+									<nav aria-label="Main Menu">
+													<ul class="sf-menu">
+								<li id="menu-item-362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home nectar-regular-menu-item menu-item-362"><a href="/"><span class="menu-title-text"><span class="nectar-text-reveal-button"><span class="nectar-text-reveal-button__text" data-text="Home">Home</span></span></span></a></li>
+<li id="menu-item-372" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nectar-regular-menu-item menu-item-372"><a href="/#work"><span class="menu-title-text"><span class="nectar-text-reveal-button"><span class="nectar-text-reveal-button__text" data-text="Work">Work</span></span></span></a></li>
+<li id="menu-item-364" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nectar-regular-menu-item menu-item-364"><a href="/#awards"><span class="menu-title-text"><span class="nectar-text-reveal-button"><span class="nectar-text-reveal-button__text" data-text="Publications">Publications</span></span></span></a></li>
+							</ul>
+													<ul class="buttons sf-menu" data-user-set-ocm="off">
+
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-btn-style-button_extra-color-1 menu-item-hover-text-reveal nectar-regular-menu-item menu-item-361"><a href="#contact"><span class="menu-title-text"><span class="nectar-text-reveal-button"><span class="nectar-text-reveal-button__text" data-text="Contact Me">Contact Me</span></span></span></a></li>
+
+							</ul>
+						
+					</nav>
+
+					<div class="logo-spacing" data-using-image="false">jsorce.com</div>
+				</div>
+<!--/span_9-->
+
+				
+			</div>
+<!--/row-->
+					</div>
+<!--/container-->
+	</header>		
+	</div>
+		<div id="ajax-content-wrap">
+
+<div id="full_width_portfolio" data-featured-img="/wp-content/uploads/2024/05/Group-2768@2x-1-v2.jpg">
+			
+				
+	<div class="container-wrap" data-nav-pos="none" data-rm-header="true">
+		
+		<div class="container main-content"> 
+			
+						
+			<div class="row  ">
+				
+				
+<div class="post-area col span_12">
+  
+	  
+	<div id="portfolio-extra">
+		<div id="fws_67b4ebca8fdad" data-column-margin="default" data-midnight="light" class="wpb_row vc_row-fluid vc_row full-width-section" style="padding-top: 3em; padding-bottom: 3em;">
+<div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop using-bg-color" style="background-color: #000000;"></div></div></div>
+<div class="row_col_wrap_12 col span_12 light left">
+	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding el_spacing_0px inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+			<div class="wpb_wrapper">
+				<div id="fws_67b4ebca90215" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row  right_padding_20pct right_padding_tablet_0px" style="padding-top: 6%; padding-bottom: 6%;">
+<div class="row-bg-wrap"> <div class="row-bg"></div> </div>
+<div class="row_col_wrap_12_inner col span_12  left">
+	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+			<div class="nectar-split-heading  font_size_6vw font_size_max_104px font_line_height_1-2 " data-align="default" data-m-align="inherit" data-text-effect="default" data-animation-type="line-reveal-by-space" data-animation-delay="0" data-animation-offset="" data-m-rm-animation="" data-stagger="true" data-custom-font-size="true" style="font-size: 6vw; line-height: 6.6vw;"><h1>Community-Engaged Digital Alzheimer's Research</h1></div>
+		</div> 
+	</div>
+	</div> 
+</div>
+</div>
+<div id="fws_67b4ebca905bb" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row vc_row-o-equal-height vc_row-flex vc_row-o-content-bottom">
+<div class="row-bg-wrap"> <div class="row-bg"></div> </div>
+<div class="row_col_wrap_12_inner col span_12  left">
+	<div class="vc_col-sm-3 vc_col-xs-6 wpb_column column_container vc_column_container col child_column no-extra-padding el_spacing_0px inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+			
+<div class="wpb_text_column wpb_content_element ">
+	<div class="wpb_wrapper">
+		<h6>Year</h6>
+	</div>
+</div>
+
+
+
+<div class="nectar-responsive-text nectar-link-underline-effect">
+<p>2023</p>
+</div>
+		</div> 
+	</div>
+	</div> 
+
+	<div class="vc_col-sm-3 vc_col-xs-6 wpb_column column_container vc_column_container col child_column no-extra-padding el_spacing_0px inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+			
+<div class="wpb_text_column wpb_content_element ">
+	<div class="wpb_wrapper">
+		<h6>Sponsors/Collaborators</h6>
+	</div>
+</div>
+
+
+
+<div class="nectar-responsive-text nectar-link-underline-effect">
+<p>Genentech</p>
+</div>
+		</div> 
+	</div>
+	</div> 
+
+	<div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding top_margin_tablet_30px inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+			<span class="nectar-meta-category-el  alignment_right_desktop alignment_default_tablet alignment_default_phone  style-outline nectar-inherit-label"><span>Engagement</span></span>
+		</div> 
+	</div>
+	</div> 
+</div>
+</div>
+			</div> 
+		</div>
+	</div> 
+</div>
+</div>
+		<div id="fws_67b4ebca91137" data-column-margin="default" data-midnight="light" class="wpb_row vc_row-fluid vc_row full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-top" style="padding-top: 0px; padding-bottom: 0px;">
+<div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop using-bg-color" style="background-color: #000000;"></div></div></div>
+<div class="row_col_wrap_12 col span_12 light left">
+	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+			<div class="wpb_wrapper">
+				<div class="img-with-aniamtion-wrap  custom-size" data-max-width="none" data-max-width-mobile="default" data-shadow="none" data-animation="none">
+      <div class="inner">
+        <div class="hover-wrap"> 
+          <div class="hover-wrap-inner">
+            <img fetchpriority="high" decoding="async" class="img-with-animation skip-lazy" data-delay="0" height="770" width="1068" data-animation="none" src="/wp-content/uploads/2024/05/Group-2768@2x-1-v2-1068x770.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+			</div> 
+		</div>
+	</div> 
+</div>
+</div>
+		<div id="fws_67b4ebca917c5" data-column-margin="default" data-midnight="light" data-top-percent="6%" data-bottom-percent="6%" class="wpb_row vc_row-fluid vc_row full-width-section" style="padding-top: calc(100vw * 0.06); padding-bottom: calc(100vw * 0.06);">
+<div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop using-bg-color" style="background-color: #000000;"></div></div></div>
+<div class="row_col_wrap_12 col span_12 light left">
+	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+			<div class="wpb_wrapper">
+				<div id="fws_67b4ebca919c7" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row">
+<div class="row-bg-wrap"> <div class="row-bg"></div> </div>
+<div class="row_col_wrap_12_inner col span_12  left">
+	<div class="vc_col-sm-4 wpb_column column_container vc_column_container col child_column no-extra-padding el_spacing_0px inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+			
+<div class="wpb_text_column wpb_content_element ">
+	<div class="wpb_wrapper">
+		<h6>The Challenge</h6>
+	</div>
+</div>
+
+
+
+
+		</div> 
+	</div>
+	</div> 
+
+	<div class="vc_col-sm-8 wpb_column column_container vc_column_container col child_column el_spacing_30px right_padding_desktop_15pct right_padding_tablet_0px " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+			<div class="nectar-responsive-text font_size_desktop_1-5em font_size_tablet_1em font_line_height_1-6 nectar-link-underline-effect">
+<p>One of the main challenges faced in this project was to increase engagement among Black/African American adults in completing the survey about motivations and barriers related to Alzheimer’s and dementia. Overcoming these challenges required a multifaceted approach that addressed cultural, historical, and systemic barriers to engagement and built trust and rapport with the target population digitally.</p>
+</div>
+		</div> 
+	</div>
+	</div> 
+</div>
+</div>
+<div id="fws_67b4ebca91ea0" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row">
+<div class="row-bg-wrap"> <div class="row-bg"></div> </div>
+<div class="row_col_wrap_12_inner col span_12  left">
+	<div class="vc_col-sm-4 wpb_column column_container vc_column_container col child_column no-extra-padding el_spacing_0px inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+			
+<div class="wpb_text_column wpb_content_element ">
+	<div class="wpb_wrapper">
+		<h6>The Results</h6>
+	</div>
+</div>
+
+
+
+
+		</div> 
+	</div>
+	</div> 
+
+	<div class="vc_col-sm-8 wpb_column column_container vc_column_container col child_column el_spacing_30px right_padding_desktop_15pct right_padding_tablet_0px " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+			<div class="nectar-responsive-text font_size_desktop_1-5em font_size_tablet_1em font_line_height_1-6 nectar-link-underline-effect">
+<p>After completing branding, messaging, website, and campaign landing pages, we reached out to 3,843 potential participants and successfully enrolled 424 individuals. Of those, 281 were able to complete the barriers and motivators survey, which provided valuable insights into the factors that influence participation.</p>
+</div>
+		</div> 
+	</div>
+	</div> 
+</div>
+</div>
+			</div> 
+		</div>
+	</div> 
+</div>
+</div>
+</div>  
+  
+</div>
+<!--/post-area-->
+				
+			</div>
+
+			<style>.wpb_column.el_spacing_30px > .vc_column-inner > .wpb_wrapper > div:not(:last-child),
+         .wpb_column.el_spacing_30px > .n-sticky > .vc_column-inner > .wpb_wrapper > div:not(:last-child) {
+          margin-bottom: 30px;
+        }
+            .nectar-post-grid[data-grid-item-height="30vh"] .nectar-post-grid-item {
+              min-height: 30vh;
+            }
+            .nectar-post-grid-wrap[data-style="content_under_image"] [data-grid-item-height="30vh"] .nectar-post-grid-item-bg {
+              height: 30vh;
+            }
+              .nectar-post-grid-wrap[data-style="content_under_image"] .custom-aspect-ratio-4-5 .nectar-post-grid-item-bg {
+                padding-bottom: calc((5 / 4) * 100%);
+                height: auto!important;
+              }
+          .nectar-post-grid[data-border-radius="5px"][data-text-layout="all_bottom_left_shadow"] .nectar-post-grid-item:before,
+          .nectar-post-grid-wrap:not([data-style="content_under_image"]) .nectar-post-grid[data-border-radius="5px"] .nectar-post-grid-item .inner,
+          .nectar-post-grid[data-border-radius="5px"] .bg-overlay,
+          .nectar-post-grid[data-border-radius="5px"][data-shadow-hover="yes"] .nectar-post-grid-item:after,
+          .nectar-post-grid[data-border-radius="5px"] .nectar-post-grid-item-bg,
+          .nectar-post-grid[data-border-radius="5px"] .nectar-post-grid-item-bg-wrap,
+          [data-style="mouse_follow_image"] .nectar-post-grid[data-border-radius="5px"] .nectar-post-grid-item-bg-wrap-inner,
+          .nectar-post-grid[data-border-radius="5px"][data-text-layout="all_bottom_left_shadow"] .nectar-post-grid-item div.inner:before {
+            border-radius: 5px;
+          }
+          .nectar-post-grid[data-border-radius="5px"] .nectar-post-grid-item-bg,
+          .nectar-post-grid[data-border-radius="5px"] .nectar-post-grid-item-bg-wrap {
+            overflow: hidden; 
+          }
+          .nectar-post-grid[data-border-radius="5px"] .nectar-post-grid-item-bg-wrap {
+            transform: translateZ(0);
+          }
+            [data-style="content_under_image"] .nectar-post-grid[data-border-radius="5px"] .nectar-post-grid-item__has-secondary .nectar-post-grid-item-bg,
+            [data-style="content_under_image"] .nectar-post-grid[data-border-radius="5px"]:not([data-card="yes"]) .nectar-post-grid-item-bg-wrap,
+            [data-style="content_under_image"] .nectar-post-grid[data-border-radius="5px"][data-lock-aspect="yes"]:not([data-card="yes"]) .img-wrap,
+            [data-style="content_under_image"] .nectar-post-grid[data-border-radius="5px"][data-card="yes"] .nectar-post-grid-item,
+            [data-style="content_under_image"] .nectar-post-grid[data-border-radius="5px"][data-shadow-hover="yes"][data-card="yes"] .nectar-post-grid-item:after {
+              border-radius: 5px;
+            }
+        @media only screen and (max-width: 690px) {
+          .vc_col-xs-4 .nectar-post-grid .nectar-post-grid-item .meta-excerpt,
+          .vc_col-xs-6 .nectar-post-grid .nectar-post-grid-item .meta-excerpt {
+            font-size: 12px;
+          }
+          .nectar-post-grid .nectar-post-grid-item .content .post-heading,
+          .nectar-post-grid-wrap:not([data-style=content_overlaid]) .nectar-post-grid-item .content .meta-excerpt {
+            max-width: 100%;
+          }
+        }
+        #ajax-content-wrap .nectar-post-grid[data-columns="1"] > .nectar-post-grid-item:nth-child(1) {
+             margin-top: 0;
+          }
+          #ajax-content-wrap .nectar-post-grid[data-columns="1"] > .nectar-post-grid-item:last-child {
+            margin-bottom: 0;
+         }
+            .nectar-post-grid[data-grid-spacing="5px"] {
+              margin-left: -5px;
+              margin-right: -5px;
+            }
+            
+            .wpb_row.full-width-content .vc_col-sm-12 .nectar-post-grid[data-grid-spacing="5px"] {
+              margin: 5px;
+            }
+
+            @media only screen and (min-width: 1000px) {
+              body[data-body-border="1"] .wpb_row.full-width-content .vc_col-sm-12 .nectar-post-grid[data-grid-spacing="5px"]{
+                margin: 5px -4px;
+              }
+            }
+
+            .nectar-post-grid[data-grid-spacing="5px"] .nectar-post-grid-item {
+              margin: 5px;
+            }
+            .nectar-post-grid[data-columns="4"][data-grid-spacing="5px"] .nectar-post-grid-item {
+              width: calc(25% - 10px);
+            }
+            .nectar-post-grid[data-columns="3"][data-grid-spacing="5px"] .nectar-post-grid-item {
+              width: calc(33.32% - 10px);
+            }
+            .nectar-post-grid[data-columns="2"][data-grid-spacing="5px"] .nectar-post-grid-item {
+              width: calc(50% - 10px);
+            }
+            
+            @media only screen and (max-width: 999px) and (min-width: 691px) {
+
+              body .nectar-post-grid[data-columns][data-grid-spacing="5px"]:not([data-columns="1"]):not([data-masonry="yes"]) .nectar-post-grid-item {
+                width: calc(50% - 10px);
+              }
+            
+            }
+                @media only screen and (max-width:690px) {
+                  body .nectar-post-grid.phone-cols-2[data-grid-spacing="5px"] .nectar-post-grid-item {
+                  width: calc(50% - 10px)!important;
+                  margin: 5px!important;
+                  }
+                }@media only screen and (min-width: 1000px) { .nectar-post-grid.custom_font_size_2vw .post-heading {
+            font-size: 2vw;
+          } }@media only screen and (min-width: 1000px) {
+          body #ajax-content-wrap .custom_font_size_2vw.font_size_max_40px.nectar-post-grid .nectar-post-grid-item .post-heading,
+          body .custom_font_size_2vw.font_size_max_40px.nectar-post-grid .nectar-post-grid-item .post-heading {
+            font-size: min(40px,2vw);
+          }
+        }@media only screen and (min-width: 1000px) {
+          body #ajax-content-wrap .custom_font_size_2vw.font_size_max_40px.nectar-post-grid .nectar-post-grid-item .post-heading,
+          body .custom_font_size_2vw.font_size_max_40px.nectar-post-grid .nectar-post-grid-item .post-heading,
+          body #header-outer .custom_font_size_2vw.font_size_max_40px.nectar-post-grid .nectar-post-grid-item .post-heading {
+            font-size: min(40px,2vw);
+          }
+        }
+        .nectar-post-grid-item .bg-overlay[data-opacity="0.3"] { 
+          opacity: 0.3; 
+        }
+        
+        .nectar-post-grid-item:hover .bg-overlay[data-hover-opacity="0.4"] { 
+          opacity: 0.4; 
+        }
+              .nectar-post-grid-wrap .category-position-overlaid .nectar-post-grid-item .content {
+                position: static!important;
+              }
+              .nectar-post-grid-wrap .category-position-overlaid .nectar-post-grid-item .meta-category {
+                position: absolute;
+                width: calc(100% - 40px);
+                z-index: 100;
+                top: 20px;
+                left: 20px;
+              }#ajax-content-wrap .nectar-post-grid-wrap .category-position-overlaid .nectar-post-grid-item .meta-category a.style-underline,
+                body .nectar-post-grid-wrap .category-position-overlaid .nectar-post-grid-item .meta-category a.style-underline {
+                  color: #fff;
+                }
+                #ajax-content-wrap .nectar-post-grid-wrap .category-position-overlaid .nectar-post-grid-item .meta-category a.style-underline:before,
+                body .nectar-post-grid-wrap .category-position-overlaid .nectar-post-grid-item .meta-category a.style-underline:before {
+                  background-color: #fff;
+                }.category-position-after-title .content {
+              display: flex;
+              flex-direction: column;
+            }
+            .category-position-after-title .meta-category  {
+              order: 2;
+              margin: 0
+            }
+            .category-position-after-title  .meta-category a {
+              margin: 10px 10px 0 0;
+            }
+            .category-position-after-title .item-main  {
+              order: 1;
+            }
+      #ajax-content-wrap .nectar-responsive-text *,
+       body .nectar-responsive-text * {
+        margin-bottom: 0;
+        color: inherit;
+      }
+      #ajax-content-wrap .nectar-responsive-text[class*="font_size"] *,
+      body .nectar-responsive-text[class*="font_size"] * {
+        font-size: inherit; 
+        line-height: inherit;
+      }
+      .nectar-responsive-text.nectar-link-underline-effect a {
+        text-decoration: none;
+      }
+      .nectar-responsive-text[data-inherit-heading-family] > * {
+        font-family: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        text-transform: inherit;
+        letter-spacing: inherit;
+      }
+      @media only screen , print {
+          body #ajax-content-wrap .font_size_desktop_3-5vw.font_size_max_60px.nectar-responsive-text,
+          body .font_size_desktop_3-5vw.font_size_max_60px.nectar-responsive-text {
+            font-size: min(60px,3.5vw);
+          }
+        }@media only screen , print {
+          body #ajax-content-wrap .font_size_desktop_3-5vw.font_size_max_60px.nectar-responsive-text,
+          body .font_size_desktop_3-5vw.font_size_max_60px.nectar-responsive-text,
+          body #header-outer .font_size_desktop_3-5vw.font_size_max_60px.nectar-responsive-text {
+            font-size: min(60px,3.5vw);
+          }
+        }@media only screen and (max-width: 999px) {
+          body #ajax-content-wrap .font_size_tablet_5vw.font_size_max_60px.nectar-responsive-text,
+          body .font_size_tablet_5vw.font_size_max_60px.nectar-responsive-text {
+            font-size: min(60px,5vw);
+          }
+        }@media only screen and (max-width: 999px) {
+          body #ajax-content-wrap .container-wrap .font_size_tablet_5vw.font_size_max_60px.nectar-responsive-text,
+          body .container-wrap .font_size_tablet_5vw.font_size_max_60px.nectar-responsive-text,
+          body #header-outer .font_size_tablet_5vw.font_size_max_60px.nectar-responsive-text {
+            font-size: min(60px,5vw);
+          }
+        }#ajax-content-wrap .font_line_height_1-2.nectar-responsive-text,
+      body .font_line_height_1-2.nectar-responsive-text  {
+          line-height: 1.2;
+      }</style>
+<div class="nectar-global-section salient_portfolio_hook_single_after_content"><div class="container normal-container row"> 
+		<div id="fws_67b4ebca9358d" data-column-margin="default" data-midnight="light" data-top-percent="6%" data-bottom-percent="4%" class="wpb_row vc_row-fluid vc_row full-width-section" style="padding-top: calc(100vw * 0.06); padding-bottom: calc(100vw * 0.04);">
+<div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop using-bg-color" style="background-color: #000000;"></div></div></div>
+<div class="row_col_wrap_12 col span_12 light left">
+	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding el_spacing_30px inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+			<div class="wpb_wrapper">
+				<div class="nectar-responsive-text font_size_max_60px font_size_desktop_3-5vw font_size_tablet_5vw font_line_height_1-2 nectar-link-underline-effect">
+<h2>Explore More Work</h2>
+</div>
+<div class="nectar-post-grid-wrap related-projects text-color-light spacing-5px" data-el-settings='{"post_type":"portfolio","pagination":"none","image_size":"large","parallax_scrolling":"","aspect_ratio_image_size":"","category_position":"below_title","category_display":"default","display_categories":"yes","display_excerpt":"0","excerpt_length":"20","display_date":"0","display_estimated_reading_time":"0","display_author":"0","author_functionality":"default","author_position":"default","color_overlay":"","color_overlay_opacity":"","color_overlay_hover_opacity":"","card_bg_color":"","grid_style":"content_under_image","hover_effect":"animated_underline_zoom","post_title_overlay":"","heading_tag":"default","heading_tag_render":"default","enable_gallery_lightbox":"0","category_style":"underline","overlay_secondary_project_image":"","vertical_list_hover_effect":"none","vertical_list_read_more":"","read_more_button":"0","animation":"fade-in-from-bottom","custom_fields":"","custom_fields_location":"before_post_meta","display_type":"grid"}' data-style="content_under_image" data-query='{"post_type":"portfolio","posts_per_page":"3","order":"DESC","orderby":"rand","offset":"0","cpt_name":"post","custom_query_tax":"","ignore_sticky_posts":"","exclude_current_post":"yes"}' data-load-more-color="black" data-load-more-text="Load More">
+<div class="nectar-post-grid-filters" data-active-color="default" data-align="default" data-animation="fade-in-from-bottom" data-sortable=""><div>
+<a href="#" class="active all-filter" data-filter="-1" data-total-count="4">All</a><a href="#" data-filter="engagement" data-total-count="1">Engagement</a><a href="#" data-filter="live-event" data-total-count="1">Live Event</a><a href="#" data-filter="recruitment" data-total-count="1">Recruitment</a><a href="#" data-filter="registry" data-total-count="1">Registry</a>
+</div></div>
+<div class="nectar-post-grid custom_font_size_2vw font_size_max_40px custom-aspect-ratio-4-5 category-position-after-title tablet-cols-2 phone-cols-2 " data-indicator="" data-indicator-style="default" data-indicator-text-color="#fff" data-indicator-color="#000" data-indicator-text="View" data-columns="3" data-hover-effect="animated_underline_zoom" data-text-style="default" data-border-radius="5px" data-grid-item-height="30vh" data-grid-spacing="5px" data-text-layout="top_left" data-text-color="light" data-text-hover-color="light" data-shadow-hover="yes" data-animation="fade-in-from-bottom" data-animation-stagger="90" data-cat-click="static" data-lock-aspect="" data-text-align="left" data-card="" style="--post-grid-border-radius:5px;">
+<div class="nectar-post-grid-item nectar-underline" data-post-id="28" data-has-img="true"> <div class="inner">
+<div class="nectar-post-grid-item-bg-wrap"><div class="nectar-post-grid-item-bg-wrap-inner">
+<a class="bg-wrap-link" href="/portfolio/ucsf/"><span class="screen-reader-text">UCSF</span></a><div class="nectar-post-grid-item-bg"><img class="nectar-lazy skip-lazy" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%202526%20595'%2F%3E" alt="" height="595" width="2526" data-nectar-img-src="/wp-content/uploads/2024/06/UCSF_Stylescapes_061720_A-1024x241.jpg" data-nectar-img-srcset="/wp-content/uploads/2024/06/UCSF_Stylescapes_061720_A-1024x241.jpg 1024w, /wp-content/uploads/2024/06/UCSF_Stylescapes_061720_A-300x71.jpg 300w, /wp-content/uploads/2024/06/UCSF_Stylescapes_061720_A-768x181.jpg 768w, /wp-content/uploads/2024/06/UCSF_Stylescapes_061720_A-1536x362.jpg 1536w, /wp-content/uploads/2024/06/UCSF_Stylescapes_061720_A-2048x482.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px"></div>
+</div></div>
+<div class="content">
+<a class="nectar-post-grid-link" href="/portfolio/ucsf/"><span class="screen-reader-text">UCSF</span></a><span class="meta-category"><a class="registry style-underline" href="/project-type/registry/">Registry</a></span><div class="item-main"><h3 class="post-heading"><a href="/portfolio/ucsf/"><span>UCSF</span></a></h3></div>
+</div>
+</div>
+</div>
+<div class="nectar-post-grid-item nectar-underline" data-post-id="48" data-has-img="true"> <div class="inner">
+<div class="nectar-post-grid-item-bg-wrap"><div class="nectar-post-grid-item-bg-wrap-inner">
+<a class="bg-wrap-link" href="/portfolio/adni/"><span class="screen-reader-text">ADNI</span></a><div class="nectar-post-grid-item-bg"><img class="nectar-lazy skip-lazy" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%202048%201152'%2F%3E" alt="" height="1152" width="2048" data-nectar-img-src="/wp-content/uploads/2024/06/adni-1024x576.png" data-nectar-img-srcset="/wp-content/uploads/2024/06/adni-1024x576.png 1024w, /wp-content/uploads/2024/06/adni-300x169.png 300w, /wp-content/uploads/2024/06/adni-768x432.png 768w, /wp-content/uploads/2024/06/adni-1536x864.png 1536w, /wp-content/uploads/2024/06/adni.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px"></div>
+</div></div>
+<div class="content">
+<a class="nectar-post-grid-link" href="/portfolio/adni/"><span class="screen-reader-text">ADNI</span></a><span class="meta-category"><a class="recruitment style-underline" href="/project-type/recruitment/">Recruitment</a></span><div class="item-main"><h3 class="post-heading"><a href="/portfolio/adni/"><span>ADNI</span></a></h3></div>
+</div>
+</div>
+</div>
+<div class="nectar-post-grid-item nectar-underline" data-post-id="75" data-has-img="true"> <div class="inner">
+<div class="nectar-post-grid-item-bg-wrap"><div class="nectar-post-grid-item-bg-wrap-inner">
+<a class="bg-wrap-link" href="/portfolio/black-mens-brain-health/"><span class="screen-reader-text">Black Men&#8217;s Brain Health</span></a><div class="nectar-post-grid-item-bg">
+<img class="nectar-lazy skip-lazy" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%201142%201524'%2F%3E" alt="" height="1524" width="1142" data-nectar-img-src="/wp-content/uploads/2024/05/BMBH_2022ConferenceProgram_REdFootball@2x-767x1024.png" data-nectar-img-srcset="/wp-content/uploads/2024/05/BMBH_2022ConferenceProgram_REdFootball@2x-767x1024.png 767w, /wp-content/uploads/2024/05/BMBH_2022ConferenceProgram_REdFootball@2x-225x300.png 225w, /wp-content/uploads/2024/05/BMBH_2022ConferenceProgram_REdFootball@2x-768x1025.png 768w, /wp-content/uploads/2024/05/BMBH_2022ConferenceProgram_REdFootball@2x.png 1142w" sizes="(max-width: 767px) 100vw, 767px"><video class="nectar-lazy-video nectar-post-grid-item-bg__video" preload="auto" loop autoplay muted playsinline>
+        <source data-nectar-video-src="https://themenectar.com/salient/portfolio-flare/wp-content/uploads/sites/42/2024/05/female-basketball.mp4" type="video/mp4">
+      </video>
+</div>
+</div></div>
+<div class="content">
+<a class="nectar-post-grid-link" href="/portfolio/black-mens-brain-health/"><span class="screen-reader-text">Black Men&#8217;s Brain Health</span></a><span class="meta-category"><a class="live-event style-underline" href="/project-type/live-event/">Live Event</a></span><div class="item-main"><h3 class="post-heading"><a href="/portfolio/black-mens-brain-health/"><span>Black Men&#8217;s Brain Health</span></a></h3></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+			</div> 
+		</div>
+	</div> 
+</div>
+</div>
+<style data-type="vc_custom-css">@media only screen and (max-width: 999px) {
+    .nectar-post-grid-item:last-of-type {
+        display: none;
+    }
+}</style>
+<style data-type="vc_custom-css">@media only screen and (max-width: 999px) {
+    .nectar-post-grid-item:last-of-type {
+        display: none;
+    }
+}</style> </div></div>  
+
+		</div>
+<!--/container-->
+
+		
+	</div>
+<!--/container-wrap-->
+
+</div>
+<!--/fullwidth-->
+
+
+<div class="nectar-social fixed" data-position="" data-rm-love="0" data-color-override="override">
+<a href="#"><i class="icon-default-style steadysets-icon-share"></i></a><div class="nectar-social-inner">
+<a class="facebook-share nectar-sharing" href="#" title="Share this"> <i class="fa fa-facebook"></i> <span class="social-text">Share</span> </a><a class="twitter-share nectar-sharing" href="#" title="Share this"> <i class="fa icon-salient-x-twitter"></i> <span class="social-text">Share</span> </a><a class="linkedin-share nectar-sharing" href="#" title="Share this"> <i class="fa fa-linkedin"></i> <span class="social-text">Share</span> </a><a class="pinterest-share nectar-sharing" href="#" title="Pin this"> <i class="fa fa-pinterest"></i> <span class="social-text">Pin</span> </a>
+</div>
+</div>
+<style>body .container-wrap .wpb_row[data-column-margin="none"]:not(.full-width-section):not(.full-width-content),
+        html body .wpb_row[data-column-margin="none"]:not(.full-width-section):not(.full-width-content) {
+          margin-bottom: 0;
+        }
+        
+        body .container-wrap .vc_row-fluid[data-column-margin="none"] > .span_12,
+        html body .vc_row-fluid[data-column-margin="none"] > .span_12,
+        body .container-wrap .vc_row-fluid[data-column-margin="none"] .full-page-inner > .container > .span_12,
+        body .container-wrap .vc_row-fluid[data-column-margin="none"] .full-page-inner > .span_12 {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        
+        body .container-wrap .vc_row-fluid[data-column-margin="none"] .wpb_column:not(.child_column),
+        body .container-wrap .inner_row[data-column-margin="none"] .child_column,
+        html body .vc_row-fluid[data-column-margin="none"] .wpb_column:not(.child_column),
+        html body .inner_row[data-column-margin="none"] .child_column {
+          padding-left: 0;
+          padding-right: 0;
+        }#ajax-content-wrap .vc_row.left_padding_40px .row_col_wrap_12,
+            .nectar-global-section .vc_row.left_padding_40px .row_col_wrap_12 {
+            padding-left: 40px;
+          } #ajax-content-wrap .vc_row.right_padding_40px .row_col_wrap_12,
+            .nectar-global-section .vc_row.right_padding_40px .row_col_wrap_12 {
+            padding-right: 40px;
+          } .wpb_column.el_spacing_0px > .vc_column-inner > .wpb_wrapper > div:not(:last-child),
+         .wpb_column.el_spacing_0px > .n-sticky > .vc_column-inner > .wpb_wrapper > div:not(:last-child) {
+          margin-bottom: 0px;
+        }
+        .nectar-split-heading .heading-line{
+          display:block;
+          overflow:hidden;
+          position:relative
+        }
+        .nectar-split-heading .heading-line >div{
+          display:block;
+          transform:translateY(200%);
+          -webkit-transform:translateY(200%)
+        }
+        
+        .nectar-split-heading h1{
+          margin-bottom:0
+        }.nectar-split-heading[data-has-fit-text="true"]:not(.fitty-fit) {
+              opacity: 0!important;
+            }.nectar-split-heading[data-has-fit-text="true"] {
+            white-space: nowrap;
+            display: inline-block;
+          }
+          a:has(.nectar-split-heading[data-has-fit-text="true"])  {
+            display: block;
+          }
+          .nectar-split-heading[data-has-fit-text="true"] * {
+            font-size: inherit;
+          }
+          .nectar-split-heading[data-has-fit-text="true"][data-text-effect] * {
+            line-height: 1; 
+          }.centered-text .nectar-split-heading[data-animation-type="line-reveal-by-space"] h1,
+          .centered-text .nectar-split-heading[data-animation-type="line-reveal-by-space"] h2,
+          .centered-text .nectar-split-heading[data-animation-type="line-reveal-by-space"] h3,
+          .centered-text .nectar-split-heading[data-animation-type="line-reveal-by-space"] h4 {
+            margin: 0 auto;
+          }
+          .nectar-split-heading[data-animation-type="line-reveal-by-space"]:not(.markup-generated) {
+            opacity: 0;
+          }
+          .nectar-split-heading[data-animation-type="line-reveal-by-space"]:not(.markup-generated).animated-in {
+              opacity: 1;
+          }
+          @media only screen and (max-width: 999px) {
+            .nectar-split-heading[data-m-rm-animation="true"] {
+              opacity: 1!important;
+            }
+          }
+          
+          .nectar-split-heading[data-animation-type="line-reveal-by-space"] > * > span  {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+          }
+          
+          .nectar-split-heading[data-animation-type="line-reveal-by-space"] span {
+             vertical-align: bottom;
+          }
+          
+          .nectar-split-heading[data-animation-type="line-reveal-by-space"] span {
+            line-height: 1.2;
+          }
+
+          @media only screen and (min-width: 1000px) {
+            .nectar-split-heading[data-animation-type="line-reveal-by-space"]:not(.markup-generated) > * {
+              line-height: 1.2;
+            }
+          }
+          @media only screen and (max-width: 999px) {
+            .nectar-split-heading[data-animation-type="line-reveal-by-space"]:not([data-m-rm-animation="true"]):not(.markup-generated) > * {
+              line-height: 1.2;
+            }
+          }
+
+          .nectar-split-heading[data-animation-type="line-reveal-by-space"][data-stagger="true"]:not([data-text-effect*="letter-reveal"]) span .inner {
+            transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+          }
+          .nectar-split-heading[data-animation-type="line-reveal-by-space"] span .inner {
+            position: relative;
+            display: inline-block;
+            -webkit-transform: translateY(1.3em);
+            transform: translateY(1.3em);
+          }
+          .nectar-split-heading[data-animation-type="line-reveal-by-space"] span .inner.animated {
+            -webkit-transform: none;
+            transform: none;
+            opacity: 1;
+          }
+            .nectar-split-heading[data-animation-type="line-reveal-by-space"][data-text-effect="letter-reveal-bottom"] > * > span {
+              padding: 0 0.05em;
+              margin: 0 -0.05em;
+            }.nectar-split-heading[data-animation-type="line-reveal-by-space"][data-align="left"] {
+            display: flex;
+            justify-content: flex-start;
+          }
+          .nectar-split-heading[data-animation-type="line-reveal-by-space"][data-align="center"] {
+            display: flex;
+            justify-content: center;
+          }
+          .nectar-split-heading[data-animation-type="line-reveal-by-space"][data-align="right"] {
+            display: flex;
+            justify-content: flex-end;
+          }
+          @media only screen and (max-width: 999px) {
+            .nectar-split-heading[data-animation-type="line-reveal-by-space"][data-m-align="left"] {
+              display: flex;
+              justify-content: flex-start;
+            }
+            .nectar-split-heading[data-animation-type="line-reveal-by-space"][data-m-align="center"] {
+              display: flex;
+              justify-content: center;
+            }
+            .nectar-split-heading[data-animation-type="line-reveal-by-space"][data-m-align="right"] {
+              display: flex;
+              justify-content: flex-end;
+            }
+          }@media only screen and (max-width: 999px) { #ajax-content-wrap .vc_row.right_padding_tablet_6pct .row_col_wrap_12 {
+              padding-right: 6%!important;
+            } }@media only screen and (max-width: 999px) { #ajax-content-wrap .vc_row.left_padding_tablet_6pct .row_col_wrap_12 {
+              padding-left: 6%!important;
+            } }@media only screen and (max-width: 999px) { .vc_row.bottom_padding_tablet_6pct {
+              padding-bottom: 6%!important;
+            } }</style>
+<div class="nectar-global-section nectar_hook_global_section_footer"><div class="container normal-container row"> 
+		<div id="fws_67b4ebca9bd35" data-column-margin="none" data-midnight="light" data-top-percent="4%" class="wpb_row vc_row-fluid vc_row full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-top  right_padding_40px left_padding_40px nectar-overflow-hidden bottom_padding_tablet_6pct right_padding_tablet_6pct left_padding_tablet_6pct" style="padding-top: calc(100vw * 0.04); padding-bottom: 40px;">
+<div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop using-bg-color" style="background-color: #000000;"></div></div></div>
+<div class="row_col_wrap_12 col span_12 light left">
+	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding el_spacing_0px inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+			<div class="wpb_wrapper">
+				<div id="fws_67b4ebca9bfb8" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row">
+<div class="row-bg-wrap"> <div class="row-bg"></div> </div>
+<div class="row_col_wrap_12_inner col span_12  left">
+	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+			<div class="nectar-split-heading " data-align="default" data-m-align="inherit" data-text-effect="letter-reveal-bottom" data-animation-type="line-reveal-by-space" data-animation-delay="0" data-animation-offset="96%" data-m-rm-animation="" data-stagger="true" data-custom-font-size="false" data-has-fit-text="true"><h1>© — <span class="nectar-current-year">2025</span>
+</h1></div>
+		</div> 
+	</div>
+	</div> 
+</div>
+</div>
+			</div> 
+		</div>
+	</div> 
+</div>
+</div>
+ </div></div>
+<div id="footer-outer" data-midnight="light" data-cols="4" data-custom-color="false" data-disable-copyright="true" data-matching-section-color="true" data-copyright-line="false" data-using-bg-img="false" data-bg-img-overlay="0.8" data-full-width="false" data-using-widget-area="false" data-link-hover="default">
+	
+		
+</div>
+<!--/footer-outer-->
+
+
+	<div id="slide-out-widget-area-bg" class="slide-out-from-right-hover dark">
+				</div>
+
+		<div id="slide-out-widget-area" class="slide-out-from-right-hover" data-dropdown-func="separate-dropdown-parent-link" data-back-txt="Back">
+
+			<div class="inner-wrap">
+			<div class="inner" data-prepend-menu-mobile="false">
+
+				<a class="slide_out_area_close" href="#"><span class="screen-reader-text">Close Menu</span>
+					<span class="close-wrap"> <span class="close-line close-line1"></span> <span class="close-line close-line2"></span> </span>				</a>
+
+
+									<div class="off-canvas-menu-container mobile-only" role="navigation">
+
+						
+						<ul class="menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-362"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-372"><a href="/#work">Work</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-364"><a href="/#awards">Publications</a></li>
+
+						</ul>
+
+						<ul class="menu secondary-header-items">
+													</ul>
+					</div>
+					
+				</div>
+
+				<div class="bottom-meta-wrap"></div>
+<!--/bottom-meta-wrap-->
+</div> <!--/inner-wrap-->
+				</div>
+		
+</div> <!--/ajax-content-wrap-->
+
+</div></div>
+<!--/ocm-effect-wrap--><script type="text/html" id="wpb-modifications"> window.wpbCustomElement = 1; <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/themes/salient/css/build/plugins/js_composer.css?ver=17.0.7" type="text/css" media="all">
+<link data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize data-noptimize rel="stylesheet" id="main-styles-non-critical-css" href="/wp-content/themes/salient/css/build/style-non-critical.css?ver=17.0.7" type="text/css" media="all">
+<link data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize data-noptimize rel="stylesheet" id="fancyBox-css" href="/wp-content/themes/salient/css/build/plugins/jquery.fancybox.css?ver=3.3.1" type="text/css" media="all">
+<link rel="stylesheet" id="nectar-smooth-scroll-css" href="/wp-content/themes/salient/css/build/plugins/lenis.css?ver=17.0.7" type="text/css" media="all">
+<link data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize data-noptimize rel="stylesheet" id="nectar-ocm-core-css" href="/wp-content/themes/salient/css/build/off-canvas/core.css?ver=17.0.7" type="text/css" media="all">
+<link data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize data-noptimize rel="stylesheet" id="nectar-ocm-slide-out-right-hover-css" href="/wp-content/themes/salient/css/build/off-canvas/slide-out-right-hover.css?ver=17.0.7" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="salient-social-js-extra">
+/* <![CDATA[ */
+var nectarLove = {"ajaxurl":"\/wp-admin\/admin-ajax.php","postID":"33","rooturl":"","loveNonce":"daabdcd9c7"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/salient-social/js/salient-social.js?ver=1.2.5" id="salient-social-js"></script>
+<script data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize type="salientlazyscript" data-salient-lazy-type="text/javascript" src="/wp-content/themes/salient/js/build/third-party/jquery.easing.min.js?ver=1.3" id="jquery-easing-js"></script>
+<script data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize type="salientlazyscript" data-salient-lazy-type="text/javascript" src="/wp-content/themes/salient/js/build/third-party/jquery.mousewheel.min.js?ver=3.1.13" id="jquery-mousewheel-js"></script>
+<script type="text/javascript" src="/wp-content/themes/salient/js/build/priority.js?ver=17.0.7" id="nectar_priority-js"></script>
+<script type="text/javascript" src="/wp-content/themes/salient/js/build/third-party/transit.min.js?ver=0.9.9" id="nectar-transit-js"></script>
+<script data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize type="salientlazyscript" data-salient-lazy-type="text/javascript" src="/wp-content/themes/salient/js/build/third-party/waypoints.js?ver=4.0.2" id="nectar-waypoints-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/salient-portfolio/js/third-party/imagesLoaded.min.js?ver=4.1.4" id="imagesLoaded-js"></script>
+<script data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize type="salientlazyscript" data-salient-lazy-type="text/javascript" src="/wp-content/themes/salient/js/build/third-party/hoverintent.min.js?ver=1.9" id="hoverintent-js"></script>
+<script type="text/javascript" src="/wp-content/themes/salient/js/build/third-party/jquery.fancybox.js?ver=3.3.9" id="fancyBox-js"></script>
+<script type="text/javascript" src="/wp-content/themes/salient/js/build/third-party/anime.min.js?ver=4.5.1" id="anime-js"></script>
+<script data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize type="salientlazyscript" data-salient-lazy-type="text/javascript" src="/wp-content/themes/salient/js/build/third-party/superfish.js?ver=1.5.8" id="superfish-js"></script>
+<script type="text/javascript" id="nectar-frontend-js-extra">
+/* <![CDATA[ */
+var nectarLove = {"ajaxurl":"\/wp-admin\/admin-ajax.php","postID":"33","rooturl":"","disqusComments":"false","loveNonce":"daabdcd9c7","mapApiKey":""};
+var nectarOptions = {"delay_js":"1","smooth_scroll":"true","smooth_scroll_strength":"50","quick_search":"false","react_compat":"disabled","header_entrance":"false","body_border_func":"default","body_border_mobile":"0","dropdown_hover_intent":"default","simplify_ocm_mobile":"0","mobile_header_format":"default","ocm_btn_position":"left","left_header_dropdown_func":"default","ajax_add_to_cart":"0","ocm_remove_ext_menu_items":"remove_images","woo_product_filter_toggle":"0","woo_sidebar_toggles":"true","woo_sticky_sidebar":"0","woo_minimal_product_hover":"default","woo_minimal_product_effect":"default","woo_related_upsell_carousel":"false","woo_product_variable_select":"default","woo_using_cart_addons":"false","view_transitions_effect":"gradient-wipe"};
+var nectar_front_i18n = {"menu":"Menu","next":"Next","previous":"Previous","close":"Close"};
+/* ]]> */
+</script>
+<script data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize type="salientlazyscript" data-salient-lazy-type="text/javascript" src="/wp-content/themes/salient/js/build/init.js?ver=17.0.7" id="nectar-frontend-js"></script>
+<script type="text/javascript" src="/wp-content/themes/salient/js/build/elements/nectar-fit-text.js?ver=17.0.7" id="nectar-fit-text-js"></script>
+<script type="text/javascript" src="/wp-content/themes/salient/js/build/nectar-smooth-scroll.js?ver=17.0.7" id="nectar-smooth-scroll-js"></script>
+<script data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize type="salientlazyscript" data-salient-lazy-type="text/javascript" src="/wp-content/plugins/salient-core/js/third-party/touchswipe.min.js?ver=1.0" id="touchswipe-js"></script>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.7.2" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize type="salientlazyscript" data-salient-lazy-type="text/javascript" src="/wp-content/plugins/js_composer_salient/assets/js/dist/js_composer_front.min.js?ver=7.8.1" id="wpb_composer_front_js-js"></script>
+<script data-pagespeed-no-defer data-nowprocket data-wpacu-skip data-no-optimize type="text/javascript" src="/wp-content/themes/salient/js/build/nectar-delay-javascript.js?ver=17.0.7" id="salient-delay-js-js"></script>
+<script></script>
+</body>
+</html>
